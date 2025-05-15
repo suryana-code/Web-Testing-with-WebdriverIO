@@ -11,11 +11,11 @@
 
 ### <p align="center"> [Overview](#overview) **|** [Requirements](#requirements) **|** [How to Use](#how-to-use) **|** [Reporters](#reporters)</p>
 
-# Overview
+## Overview
 
 This is a sample project using WebdriverIO to perform website testing on [Saucedemo](https://www.saucedemo.com), with test scenarios for the [login process](test/specs/login.e2e.js) and [product page](test/specs/products.e2e.js) of Sauce Demo. The tests also implement the **Page Object Model (POM)** design pattern and **Data-Driven Testing (DDT)** to keep the code clean and maintainable, and are integrated with **Allure Report** for detailed test reporting.
 
-# Requirements
+## Requirements
 
 - **Node.js**
   Install with `nvm install 20` – this project requires the latest Node.js version.
@@ -23,7 +23,7 @@ This is a sample project using WebdriverIO to perform website testing on [Sauced
 - **WebdriverIO**
   Install with `npm init wdio@latest` – this will install the latest version of WebdriverIO. You can refer to the [official documentation](https://webdriver.io/docs/gettingstarted) for guidance.
 
-# How to Use
+## How to Use
 
 1. Clone this repository
 2. Open it with a text editor, e.g., VSCode
@@ -31,7 +31,7 @@ This is a sample project using WebdriverIO to perform website testing on [Sauced
 4. Run `npx wdio run wdio.conf.js`, or if you need to specify a particular spec file, use:
    `npx wdio run wdio.conf.js --spec [spec file]`
 
-# Reporters
+## Reporters
 
 This project uses **Allure** as the test reporter, configured in the [wdio.conf.js](wdio.conf.js) file.
 Allure provides a visual test report (in HTML format) with detailed debugging information.
