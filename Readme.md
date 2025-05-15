@@ -1,8 +1,15 @@
+# <img width="35px" height="40px" src="https://avatars.githubusercontent.com/u/83816501?s=200&v=4"/> Web Automation with WebdriberIO
+
 <br>
 <p align="center">
   <img src="asset/Running test.gif"/>
+   <i>This is a sample project for testing the Saucedemo website using WebdriverIO.</i>
 </p>
 <br>
+
+---
+
+### <p align="center"> [Overview](#overview) **|** [Requirements](#requirements) **|** [How to Use](#how-to-use) **|** [Reporters](#reporters)</p>
 
 # Overview
 
@@ -16,8 +23,6 @@ This is a sample project using WebdriverIO to perform website testing on [Sauced
 - **WebdriverIO**
   Install with `npm init wdio@latest` – this will install the latest version of WebdriverIO. You can refer to the [official documentation](https://webdriver.io/docs/gettingstarted) for guidance.
 
----
-
 # How to Use
 
 1. Clone this repository
@@ -25,8 +30,6 @@ This is a sample project using WebdriverIO to perform website testing on [Sauced
 3. Open the terminal
 4. Run `npx wdio run wdio.conf.js`, or if you need to specify a particular spec file, use:
    `npx wdio run wdio.conf.js --spec [spec file]`
-
----
 
 # Reporters
 
