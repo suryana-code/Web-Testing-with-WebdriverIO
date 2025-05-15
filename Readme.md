@@ -1,4 +1,4 @@
-# <img width="35px" height="40px" src="https://avatars.githubusercontent.com/u/83816501?s=200&v=4"/> Web Automation with WebdriberIO
+# Web Automation with WebdriberIO <img width="35px" height="40px" src="https://avatars.githubusercontent.com/u/83816501?s=200&v=4"/>
 
 <br>
 <p align="center">
