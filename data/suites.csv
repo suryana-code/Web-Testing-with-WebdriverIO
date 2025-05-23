@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","234","should not be login with invalid username: """" & password: """"","","Fri May 23 07:53:03 UTC 2025","passed","Fri May 23 07:53:03 UTC 2025","","Login with INVALID credential","",""
+"","343","should not be login with invalid username: """" & password: ""password""","","Fri May 23 07:53:02 UTC 2025","passed","Fri May 23 07:53:02 UTC 2025","","Login with INVALID credential","",""
+"","1135","should product data on homepage have the same details, and can be added to cart","","Fri May 23 07:53:05 UTC 2025","passed","Fri May 23 07:53:06 UTC 2025","","Check product on homepage and detail product","",""
+"","483","should login with valid username: ""standard_user"" & password: ""secret_sauce""","","Fri May 23 07:53:03 UTC 2025","passed","Fri May 23 07:53:03 UTC 2025","","Login with VALID credential","",""
+"","256","should not be login with invalid username: ""username"" & password: """"","","Fri May 23 07:53:02 UTC 2025","passed","Fri May 23 07:53:03 UTC 2025","","Login with INVALID credential","",""
+"","1523","should not be login with invalid username: ""username"" & password: ""password""","","Fri May 23 07:53:01 UTC 2025","passed","Fri May 23 07:53:02 UTC 2025","","Login with INVALID credential","",""
