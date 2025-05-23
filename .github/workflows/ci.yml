@@ -22,6 +22,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Allure CLI
+        run: |
+          npm install -g allure-commandline --save-dev
+
       - name: Run tests (HEADLESS) #to run headless
         run: npm run wdio
 
