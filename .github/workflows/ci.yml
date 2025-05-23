@@ -1,14 +1,18 @@
-name: Run WDIO Tests
+name: CI
 
-on: [push, pull_request]
+on:
+push:
+  branches: [main]
+
+pull_request:
+  branches: [main]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - user: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -16,9 +20,17 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Run WDIO tests
+      - name: Run tests (HEADLESS) #to run headless
         run: npm run wdio
-        env:
-          HEADLESS: true
+
+      - name: generate Allure report
+        run: npm run report:generate
+
+      - name: Deploy Allure report to Github Pages
+        user: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN}}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages

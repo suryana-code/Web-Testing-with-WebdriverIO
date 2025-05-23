@@ -7,6 +7,8 @@
 </p>
 <br>
 
+![CI](https://github.com/suryana-code/Web-Testing-with-WebdriverIO/actions/workflows/ci.yml/badge.svg)
+
 ---
 
 ### <p align="center"> [Overview](#overview) **|** [Requirements](#requirements) **|** [How to Use](#how-to-use) **|** [Reporters](#reporters)</p>
