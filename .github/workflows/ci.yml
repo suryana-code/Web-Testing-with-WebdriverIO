@@ -1,17 +1,13 @@
-name: WebdriverIO Tests
+name: Run WDIO Tests
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+on: [push, pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -22,5 +18,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run WebdriverIO tests
-        run: npx wdio run wdio.conf.js
+      - name: Run WDIO tests
+        run: npm run wdio
+        env:
+          HEADLESS: true
