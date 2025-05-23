@@ -33,6 +33,12 @@ This is a sample project using WebdriverIO to perform website testing on [Sauced
 4. Run `npx wdio run wdio.conf.js`, or if you need to specify a particular spec file, use:
    `npx wdio run wdio.conf.js --spec [spec file]`
 
+## Continuous Integration (CI)
+
+![CI](https://github.com/suryana-code/Web-Testing-with-WebdriverIO/actions/workflows/ci.yml/badge.svg)
+
+This project has implemented a Continuous Integration (CI) process. However, the CI is triggered internally from this project's branch, not from the SauceDemo source. The CI process runs automatically whenever there is a push to the main branch.
+
 ## Reporters
 
 This project uses **Allure** as the test reporter, configured in the [wdio.conf.js](wdio.conf.js) file.
